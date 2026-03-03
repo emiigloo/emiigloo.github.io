@@ -1,0 +1,73 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background: url("bg.gif");
+  background-attachment: fixed;
+  color: #ffffff;
+  background-color: #1a1c2c;
+  font-family: monospace;
+  font-weight: 900;
+}
+
+#banner {
+  height: auto;
+  max-width: 100%;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#boxcolor {
+ background-image: linear-gradient(#566c86, #1a1c2c);
+ border-style: double;
+ max-width: 700px;
+ padding: 10px;
+ 
+}
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* Add dots under the hoverable text */
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden; /* Hidden by default */
+  width: 130px;
+  background-color: black;
+  color: #fffffff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1; /* Ensure tooltip is displayed above content */
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
